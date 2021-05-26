@@ -32,7 +32,7 @@ class pratos
 
     function inserePrato(){
         $file = fopen('dados.csv','a');
-        fputcsv($file,array($this->prato,$this->categoria));
+        fputcsv($file,array($this->categoria,$this->prato));
         fclose($file);
 
     }
